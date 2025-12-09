@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Choice Dryer Vent Cleaning | Nashville, TN | Same Day Service</title>
+    <meta name="description" content="Professional dryer vent cleaning in Nashville, TN. Prevent fires, lower energy bills, and extend dryer life. Licensed & insured. Same day service. Call (615) 768-0085">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --blue-900: #0c2340; --blue-800: #0f3460; --blue-600: #2563eb; --blue-500: #3b82f6; --blue-100: #dbeafe; --blue-50: #eff6ff; --white: #ffffff; --gray-50: #f8fafc; --gray-100: #f1f5f9; --gray-200: #e2e8f0; --gray-500: #64748b; --gray-600: #475569; --gray-700: #334155; --gray-800: #1e293b; --gray-900: #0f172a; --green-500: #22c55e; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; color: var(--gray-800); line-height: 1.6; background: var(--white); }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+        header { position: fixed; top: 0; left: 0; right: 0; background: var(--white); z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; max-width: 1140px; margin: 0 auto; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo img { height: 65px; width: auto; }
+        .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+        .logo-text-main { font-size: 1.25rem; font-weight: 800; color: var(--blue-800); }
+        .logo-text-sub { font-size: 0.75rem; font-weight: 600; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; }
+        .header-right { display: flex; align-items: center; gap: 24px; }
+        .header-phone-text { text-align: right; display: none; }
+        .header-phone-label { font-size: 0.75rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.5px; }
+        .header-phone-number { font-size: 1.1rem; font-weight: 700; color: var(--blue-800); }
+        .btn-call { display: inline-flex; align-items: center; gap: 8px; background: var(--blue-600); color: var(--white); padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: background 0.2s; }
+        .btn-call:hover { background: var(--blue-800); }
+        .btn-call svg { width: 18px; height: 18px; }
+        .hero { padding: 120px 0 80px; background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 100%); }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .hero-content h1 { font-size: 2.75rem; font-weight: 800; color: var(--gray-900); line-height: 1.15; margin-bottom: 20px; }
+        .hero-content h1 span { color: var(--blue-600); }
+        .hero-content p { font-size: 1.125rem; color: var(--gray-600); margin-bottom: 28px; line-height: 1.7; }
+        .hero-trust { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
+        .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 600; color: var(--gray-700); }
+        .trust-item svg { width: 20px; height: 20px; color: var(--green-500); }
+        .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--blue-600); color: var(--white); padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: background 0.2s; }
+        .btn-primary:hover { background: var(--blue-800); }
+        .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--gray-700); padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.05rem; border: 2px solid var(--gray-200); transition: all 0.2s; }
+        .btn-secondary:hover { border-color: var(--blue-600); color: var(--blue-600); }
+        .hero-image { display: flex; justify-content: center; align-items: center; }
+        .hero-image img { max-width: 380px; width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15)); }
+        .risks { padding: 80px 0; background: var(--blue-900); color: var(--white); }
+        .risks-header { text-align: center; margin-bottom: 50px; }
+        .risks-header h2 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+        .risks-header p { font-size: 1.05rem; opacity: 0.8; max-width: 600px; margin: 0 auto; }
+        .risks-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .risk-card { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 28px 24px; text-align: center; border: 1px solid rgba(255,255,255,0.1); }
+        .risk-icon { width: 56px; height: 56px; background: rgba(255,255,255,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+        .risk-icon svg { width: 28px; height: 28px; }
+        .risk-icon.fire svg { color: #f97316; }
+        .risk-icon.efficiency svg { color: #3b82f6; }
+        .risk-icon.money svg { color: #22c55e; }
+        .risk-icon.health svg { color: #a855f7; }
+        .risk-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+        .risk-card p { font-size: 0.9rem; opacity: 0.75; line-height: 1.6; }
+        .risk-stat { margin-top: 50px; text-align: center; padding: 24px; background: rgba(239, 68, 68, 0.15); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.3); }
+        .risk-stat p { font-size: 1.05rem; line-height: 1.7; }
+        .risk-stat strong { color: #fca5a5; }
+        .services { padding: 80px 0; background: var(--white); }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header h2 { font-size: 2rem; font-weight: 800; color: var(--gray-900); margin-bottom: 12px; }
+        .section-header p { font-size: 1.05rem; color: var(--gray-600); max-width: 550px; margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .service-card { background: var(--gray-50); border-radius: 12px; padding: 32px 28px; border: 1px solid var(--gray-100); transition: all 0.2s; }
+        .service-card:hover { background: var(--white); border-color: var(--blue-100); box-shadow: 0 10px 40px rgba(37, 99, 235, 0.1); }
+        .service-icon { width: 52px; height: 52px; background: var(--blue-100); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .service-icon svg { width: 26px; height: 26px; color: var(--blue-600); }
+        .service-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--gray-900); margin-bottom: 10px; }
+        .service-card p { font-size: 0.95rem; color: var(--gray-600); line-height: 1.6; }
+        .why-us { padding: 80px 0; background: var(--gray-50); }
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .why-content h2 { font-size: 2rem; font-weight: 800; color: var(--gray-900); margin-bottom: 20px; }
+        .why-content > p { font-size: 1.05rem; color: var(--gray-600); margin-bottom: 32px; line-height: 1.7; }
+        .why-list { list-style: none; }
+        .why-list li { display: flex; gap: 16px; margin-bottom: 20px; }
+        .why-check { width: 28px; height: 28px; background: var(--blue-600); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+        .why-check svg { width: 14px; height: 14px; color: var(--white); }
+        .why-list li div h4 { font-size: 1rem; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+        .why-list li div p { font-size: 0.9rem; color: var(--gray-600); }
+        .why-image { display: flex; justify-content: center; }
+        .why-image img { max-width: 320px; width: 100%; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12)); }
+        .service-area { padding: 60px 0; background: var(--blue-600); color: var(--white); text-align: center; }
+        .service-area h2 { font-size: 1.75rem; font-weight: 800; margin-bottom: 12px; }
+        .service-area > p { font-size: 1rem; opacity: 0.9; margin-bottom: 24px; }
+        .counties { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 800px; margin: 0 auto; }
+        .county { background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; }
+        .contact { padding: 80px 0; background: var(--white); }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+        .contact-info h2 { font-size: 2rem; font-weight: 800; color: var(--gray-900); margin-bottom: 16px; }
+        .contact-info > p { font-size: 1.05rem; color: var(--gray-600); margin-bottom: 32px; line-height: 1.7; }
+        .contact-method { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+        .contact-method-icon { width: 52px; height: 52px; background: var(--blue-100); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-method-icon svg { width: 24px; height: 24px; color: var(--blue-600); }
+        .contact-method-text a { font-size: 1.35rem; font-weight: 700; color: var(--gray-900); text-decoration: none; }
+        .contact-method-text a:hover { color: var(--blue-600); }
+        .contact-method-text span { display: block; font-size: 0.85rem; color: var(--gray-500); margin-top: 2px; }
+        .contact-form { background: var(--gray-50); border-radius: 12px; padding: 32px; border: 1px solid var(--gray-100); }
+        .contact-form h3 { font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 6px; }
+        .contact-form > p { font-size: 0.95rem; color: var(--gray-600); margin-bottom: 24px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gray-700); margin-bottom: 6px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--gray-200); border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s; background: var(--white); }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--blue-500); }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-submit { width: 100%; background: var(--blue-600); color: var(--white); padding: 14px 24px; border: none; border-radius: 8px; font-family: inherit; font-size: 1rem; font-weight: 700; cursor: pointer; transition: background 0.2s; }
+        .form-submit:hover { background: var(--blue-800); }
+        footer { background: var(--gray-900); color: var(--white); padding: 50px 0 30px; }
+        .footer-main { display: flex; justify-content: space-between; align-items: center; padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 24px; }
+        .footer-logo { display: flex; align-items: center; gap: 12px; }
+        .footer-logo img { height: 60px; }
+        .footer-logo span { font-size: 1.1rem; font-weight: 700; }
+        .footer-links { display: flex; gap: 28px; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--white); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+        .footer-bottom a { color: var(--blue-500); text-decoration: none; }
+        @media (min-width: 768px) { .header-phone-text { display: block; } }
+        @media (max-width: 992px) { .hero-grid, .why-grid, .contact-grid { grid-template-columns: 1fr; text-align: center; } .hero-trust, .hero-cta { justify-content: center; } .hero-image, .why-image { order: -1; } .hero-image img { max-width: 280px; } .why-image img { max-width: 250px; } .why-list li { text-align: left; } .risks-grid { grid-template-columns: repeat(2, 1fr); } .services-grid { grid-template-columns: 1fr; max-width: 450px; margin: 0 auto; } }
+        @media (max-width: 768px) { .logo-text { display: none; } .hero { padding: 100px 0 60px; } .hero-content h1 { font-size: 2rem; } .risks-grid { grid-template-columns: 1fr; max-width: 350px; margin: 0 auto; } .footer-main, .footer-bottom { flex-direction: column; gap: 20px; text-align: center; } }
+        @media (max-width: 480px) { .btn-call span { display: none; } .hero-cta { flex-direction: column; } .btn-primary, .btn-secondary { width: 100%; justify-content: center; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="1st Choice Dryer Vent Cleaning">
+                <div class="logo-text"><span class="logo-text-main">1st Choice</span><span class="logo-text-sub">Dryer Vent Cleaning</span></div>
+            </a>
+            <div class="header-right">
+                <div class="header-phone-text"><div class="header-phone-label">Call For Same-Day Service</div><div class="header-phone-number">(615) 768-0085</div></div>
+                <a href="tel:6157680085" class="btn-call"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>(615) 768-0085</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Professional <span>Dryer Vent Cleaning</span> in Nashville, TN</h1>
+                    <p>Protect your home and family from fire hazards, reduce your energy bills, and extend the life of your dryer with professional vent cleaning services.</p>
+                    <div class="hero-trust">
+                        <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Licensed &amp; Insured</div>
+                        <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>30+ Years Experience</div>
+                        <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>Same-Day Service</div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="tel:6157680085" class="btn-primary"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call (615) 768-0085</a>
+                        <a href="#contact" class="btn-secondary">Schedule Online</a>
+                    </div>
+                </div>
+                <div class="hero-image"><img src="logo.png" alt="1st Choice Dryer Vent Cleaning Nashville"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="risks">
+        <div class="container">
+            <div class="risks-header">
+                <h2>The Risks of Poor Dryer Vent Maintenance</h2>
+                <p>A clogged dryer vent is more than an inconvenience—it's a serious safety hazard that affects your home, health, and wallet.</p>
+            </div>
+            <div class="risks-grid">
+                <div class="risk-card"><div class="risk-icon fire"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/></svg></div><h3>Fire Hazard</h3><p>Lint buildup causes your dryer to overheat, creating a serious fire risk. Dryer fires cause millions in property damage annually.</p></div>
+                <div class="risk-card"><div class="risk-icon efficiency"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div><h3>Reduced Efficiency</h3><p>About 75% of lint bypasses your lint trap and accumulates in the duct, restricting airflow and increasing drying time.</p></div>
+                <div class="risk-card"><div class="risk-icon money"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div><h3>Higher Energy Bills</h3><p>A clogged vent forces your dryer to work harder and longer. You can save up to $40/month with annual cleaning.</p></div>
+                <div class="risk-card"><div class="risk-icon health"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 13H8v-3h2.5V7.5h3V10H16v3h-2.5v2.5h-3V13zM12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"/></svg></div><h3>Health Risks</h3><p>Blocked vents prevent proper ventilation of carbon monoxide and create conditions for mold growth.</p></div>
+            </div>
+            <div class="risk-stat"><p>According to the National Fire Protection Association, there are an average of <strong>15,970 home fires each year</strong> caused by clothes dryers, with failure to clean being the leading factor.</p></div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header"><h2>Our Services</h2><p>Comprehensive dryer vent solutions to keep your home safe and your dryer running at peak performance.</p></div>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div><h3>Dryer Vent Cleaning</h3><p>Complete removal of lint, debris, and blockages from your entire dryer vent system—from the dryer to the exterior vent cap. Improve efficiency and reduce fire risk.</p></div>
+                <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg></div><h3>Dryer Vent Inspection</h3><p>Thorough inspection of your vent system to identify blockages, damage, improper installation, or code violations before they become costly problems.</p></div>
+                <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div><h3>Vent Installation &amp; Repair</h3><p>Professional installation of code-compliant steel vent systems and repair of damaged, crushed, or improperly installed dryer vents.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <h2>Why Choose 1st Choice?</h2>
+                    <p>For over 30 years, we've been Nashville's trusted name in appliance services. When you choose 1st Choice, you get honest, professional service from a local family-owned business.</p>
+                    <ul class="why-list">
+                        <li><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><h4>Same-Day Service Available</h4><p>We know your time is valuable. Call us and we'll be there when you need us.</p></div></li>
+                        <li><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><h4>Licensed, Insured &amp; Certified</h4><p>Fully licensed and insured technicians you can trust in your home.</p></div></li>
+                        <li><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><h4>Fair, Upfront Pricing</h4><p>No surprises. We quote you a fair price before we start any work.</p></div></li>
+                        <li><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div><div><h4>Local &amp; Family Owned</h4><p>Proudly serving Nashville and surrounding communities since 1992.</p></div></li>
+                    </ul>
+                </div>
+                <div class="why-image"><img src="logo.png" alt="1st Choice - Trusted Dryer Vent Service"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-area">
+        <div class="container">
+            <h2>Serving All of Metro Nashville</h2>
+            <p>Same-day dryer vent cleaning available throughout the greater Nashville area.</p>
+            <div class="counties">
+                <span class="county">Davidson County</span><span class="county">Williamson County</span><span class="county">Rutherford County</span><span class="county">Sumner County</span><span class="county">Wilson County</span><span class="county">Robertson County</span><span class="county">Cheatham County</span><span class="county">Maury County</span><span class="county">Montgomery County</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Don't wait until it's too late. Protect your home and family with professional dryer vent cleaning. Call us today or fill out the form to schedule your service.</p>
+                    <div class="contact-method"><div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><div class="contact-method-text"><a href="tel:6157680085">(615) 768-0085</a><span>Call for same-day service</span></div></div>
+                    <div class="contact-method"><div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div><div class="contact-method-text"><a href="#">Mon-Fri: 8am-6pm, Sat: 8am-1pm</a><span>Emergency service available</span></div></div>
+                    <div class="contact-method"><div class="contact-method-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div class="contact-method-text"><a href="#">Nashville, TN</a><span>Serving all of Metro Nashville</span></div></div>
+                </div>
+                <div class="contact-form">
+                    <h3>Schedule Your Service</h3>
+                    <p>Fill out the form and we'll contact you to confirm your appointment.</p>
+                    <form id="contact-form">
+                        <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
+                        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required></div>
+                        <div class="form-group"><label for="email">Email (optional)</label><input type="email" id="email" name="email"></div>
+                        <div class="form-group"><label for="message">How can we help?</label><textarea id="message" name="message" placeholder="Describe your dryer vent issue or service needed..."></textarea></div>
+                        <button type="submit" class="form-submit">Request Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-logo"><img src="logo.png" alt="1st Choice"><span>1st Choice Dryer Vent Cleaning</span></div>
+                <div class="footer-links"><a href="#services">Services</a><a href="#contact">Contact</a><a href="tel:6157680085">(615) 768-0085</a></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 1st Choice Dryer Vent Cleaning. All Rights Reserved.</p><p>A division of <a href="https://appliancerepairgeek.com/">1st Choice Appliance Repair</a></p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) { e.preventDefault(); alert('Thank you! We will contact you shortly to confirm your appointment.'); this.reset(); });
+        document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function(e) { const href = this.getAttribute('href'); if (href !== '#') { e.preventDefault(); const target = document.querySelector(href); if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
+    </script>
+</body>
+</html>
