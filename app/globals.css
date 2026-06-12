@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — carried over from the original design */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #0f3460;
+  --color-brand-900: #0c2340;
+
+  --color-ink-50: #f8fafc;
+  --color-ink-100: #f1f5f9;
+  --color-ink-200: #e2e8f0;
+  --color-ink-300: #cbd5e1;
+  --color-ink-500: #64748b;
+  --color-ink-600: #475569;
+  --color-ink-700: #334155;
+  --color-ink-800: #1e293b;
+  --color-ink-900: #0f172a;
+
+  --color-success: #22c55e;
+
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system,
+    sans-serif;
+
+  --shadow-card: 0 10px 40px rgba(37, 99, 235, 0.1);
+  --shadow-soft: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offset for the fixed header when jumping to anchors */
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink-800);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reusable section vertical rhythm */
+.section {
+  padding-block: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 3.5rem;
+  }
+}
