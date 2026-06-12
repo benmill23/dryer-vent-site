@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
+import Placeholder from "@/components/Placeholder";
 import LocationSchema from "@/components/LocationSchema";
 import Services from "@/components/sections/Services";
 import Pricing from "@/components/sections/Pricing";
@@ -110,7 +111,13 @@ export default async function LocationPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Local info card */}
+            {/* Right column: local photo + info card */}
+            <div className="space-y-5">
+            <Placeholder
+              label={`Dryer vent cleaning in ${loc.city}`}
+              aspect="4 / 3"
+              className="shadow-card"
+            />
             <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">
               <h2 className="text-sm font-bold uppercase tracking-wider text-ink-500">
                 Serving {loc.city} &amp; Nearby
@@ -144,6 +151,7 @@ export default async function LocationPage({ params }: Props) {
                 </p>
                 <p className="mt-1.5 text-sm text-ink-600">{loc.population}</p>
               </div>
+            </div>
             </div>
           </div>
         </div>

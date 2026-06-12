@@ -1,3 +1,4 @@
+import Placeholder from "@/components/Placeholder";
 import { process } from "@/lib/site";
 
 export default function Process() {
@@ -36,6 +37,27 @@ export default function Process() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Before / after — the proof homeowners want to see */}
+        <div className="mx-auto mt-14 max-w-3xl">
+          <p className="text-center text-sm font-bold uppercase tracking-wider text-brand-600">
+            The Difference Is Night &amp; Day
+          </p>
+          <div className="mt-5 grid gap-5 sm:grid-cols-2">
+            <div className="relative">
+              <Placeholder label="Lint-clogged vent before cleaning" aspect="4 / 3" />
+              <span className="absolute left-3 top-3 rounded-full bg-ink-900/80 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                Before
+              </span>
+            </div>
+            <div className="relative">
+              <Placeholder label="Clean, clear vent after service" aspect="4 / 3" />
+              <span className="absolute left-3 top-3 rounded-full bg-success px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
+                After
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import Placeholder from "@/components/Placeholder";
 import Contact from "@/components/sections/Contact";
 import { locations } from "@/lib/locations";
 import { site, serviceAreas } from "@/lib/site";
@@ -35,6 +36,15 @@ export default function ServiceAreasHub() {
             <Icon name="phone" className="h-5 w-5" />
             Call {site.phone}
           </a>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <Placeholder
+              label={`Our service van across Metro ${site.city}`}
+              aspect="16 / 9"
+              className="shadow-card"
+              priority
+            />
+          </div>
         </div>
       </section>
 

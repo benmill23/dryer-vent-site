@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Icon, { type IconName } from "@/components/Icon";
 import CommercialSchema from "@/components/CommercialSchema";
+import Placeholder from "@/components/Placeholder";
 import Faq from "@/components/sections/Faq";
 import Contact from "@/components/sections/Contact";
 import { site } from "@/lib/site";
@@ -93,7 +94,13 @@ export default function CommercialPage() {
               </div>
             </div>
 
-            {/* Pricing model card */}
+            {/* Right column: property photo + pricing model card */}
+            <div className="space-y-5">
+            <Placeholder
+              label="Multi-unit property laundry facility"
+              aspect="4 / 3"
+              className="shadow-card"
+            />
             <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">
               <h2 className="text-sm font-bold uppercase tracking-wider text-ink-500">
                 Volume Pricing Model
@@ -119,6 +126,7 @@ export default function CommercialPage() {
               <p className="mt-4 text-xs leading-relaxed text-ink-500">
                 {commercialPricing.note}
               </p>
+            </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Icon from "@/components/Icon";
+import Placeholder from "@/components/Placeholder";
 import { whyUs, site } from "@/lib/site";
 
 export default function WhyUs() {
@@ -38,15 +38,13 @@ export default function WhyUs() {
 
           <div className="order-1 flex justify-center lg:order-2">
             <div className="relative w-full max-w-sm">
-              <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-8 text-center text-white shadow-2xl">
-                <Image
-                  src="/logo.png"
-                  alt={site.name}
-                  width={200}
-                  height={294}
-                  className="mx-auto w-40 drop-shadow-xl"
+              <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 text-center text-white shadow-2xl">
+                <Placeholder
+                  label="Our technician at work"
+                  aspect="4 / 3"
+                  className="ring-1 ring-white/20"
                 />
-                <div className="mt-6 grid grid-cols-2 gap-4">
+                <div className="mt-5 grid grid-cols-2 gap-4">
                   <div className="rounded-xl bg-white/10 p-4">
                     <div className="text-3xl font-extrabold">
                       {site.yearsExperience}

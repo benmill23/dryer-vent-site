@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Icon from "@/components/Icon";
+import Placeholder from "@/components/Placeholder";
 import { site, trustBadges } from "@/lib/site";
 
 export default function Hero() {
@@ -63,17 +63,24 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-6 rounded-full bg-brand-100/60 blur-2xl" />
-              <Image
-                src="/logo.png"
-                alt={`${site.name} — ${site.city}, ${site.state}`}
-                width={340}
-                height={500}
-                priority
-                className="relative w-64 max-w-full drop-shadow-2xl sm:w-80"
-              />
+          <div className="relative">
+            <Placeholder
+              label="Technician cleaning a dryer vent"
+              aspect="4 / 3"
+              priority
+              className="shadow-2xl"
+            />
+            {/* Floating trust badge */}
+            <div className="absolute -bottom-5 left-4 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
+                {site.yearsExperience}
+              </span>
+              <span className="text-left">
+                <span className="block text-sm text-amber-400">★★★★★</span>
+                <span className="block text-xs font-semibold text-ink-600">
+                  Trusted across Metro {site.city}
+                </span>
+              </span>
             </div>
           </div>
         </div>

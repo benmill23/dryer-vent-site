@@ -43,8 +43,8 @@ export default function Risks() {
             <strong className="text-red-300">
               ~16,000 home fires every year
             </strong>
-            , and <strong className="text-red-300">failure to clean</strong> is
-            the leading factor. Don&apos;t wait until it&apos;s too late.
+            , and <strong className="text-red-300">failure to clean</strong>{" "}
+            is the leading factor. Don&apos;t wait until it&apos;s too late.
           </p>
         </div>
       </div>
