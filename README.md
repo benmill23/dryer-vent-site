@@ -18,23 +18,30 @@ service areas — the whole site reads from it. No need to touch the components.
 
 ## Connecting the contact form (important)
 
-The form emails leads straight to your inbox using **Web3Forms** (free, no
-server). To turn it on:
+The form emails leads straight to your inbox using **FormSubmit.co** (free, no
+account, no API key, no server). Leads are sent to the **`email`** set in
+[`lib/site.ts`](lib/site.ts).
 
-1. Go to <https://web3forms.com> and enter your email to get a free **access key**.
-2. In the project root, create a file named `.env.local` containing:
-   ```
-   NEXT_PUBLIC_WEB3FORMS_KEY=your-access-key-here
-   ```
-3. Restart the dev server (`npm run dev`). Submissions now arrive in your email.
+To turn it on:
 
-Until a key is set, the form politely tells visitors to call you instead, so
-nothing breaks.
+1. Make sure `email` in `lib/site.ts` is an inbox you can actually open.
+2. Deploy (or run locally) and submit the form **once**. FormSubmit emails that
+   address a one-time **"Confirm your email"** link — click it.
+3. Done. Every submission after that lands in your inbox, no further setup.
+
+Want leads to go somewhere other than the public `email`? Add this to
+`.env.local` (and to Vercel's env vars) — it overrides the destination:
+```
+NEXT_PUBLIC_FORMSUBMIT_EMAIL=where-leads-should-go@example.com
+```
+
+If a submission ever fails, the form politely tells visitors to call you
+instead, so nothing breaks.
 
 ## Before you go live (checklist)
 
 - [ ] Set your real domain in `lib/site.ts` (`url`) — used for SEO & schema.
-- [ ] Add the Web3Forms key (above) so leads reach your inbox.
+- [ ] Confirm the FormSubmit activation email (above) so leads reach your inbox.
 - [ ] Replace the **placeholder reviews** in `lib/site.ts` with your real Google
       reviews. (Don't publish fake reviews — Google penalizes fabricated review
       markup. We left star-rating schema OFF until you have real ones.)
@@ -59,7 +66,10 @@ vercel            # preview deploy
 vercel --prod     # production
 ```
 
-Add `NEXT_PUBLIC_WEB3FORMS_KEY` in the Vercel project's Environment Variables.
+The contact form (FormSubmit.co) needs no env vars to work — just confirm the
+one-time activation email after your first submission. Only set
+`NEXT_PUBLIC_FORMSUBMIT_EMAIL` in Vercel's Environment Variables if you want
+leads delivered to a different address than the public `email` in `lib/site.ts`.
 
 ## Project structure
 

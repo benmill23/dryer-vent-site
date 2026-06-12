@@ -5,10 +5,15 @@ import { site } from "@/lib/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-// Leads are delivered by Web3Forms (free, no server needed).
-// 1. Get a free access key at https://web3forms.com (uses your email).
-// 2. Put it in .env.local as NEXT_PUBLIC_WEB3FORMS_KEY=your-key
-const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+// Leads are delivered by FormSubmit.co (free, no account, no server needed).
+// Leads go to the email below. By default that's `site.email` from lib/site.ts
+// — change it there, or override with NEXT_PUBLIC_FORMSUBMIT_EMAIL in .env.local.
+//
+// ⚠️ One-time activation: the FIRST time the form is submitted, FormSubmit emails
+// that address a "Confirm your email" link. Click it once and the form is live;
+// every submission after that lands straight in the inbox.
+const LEAD_EMAIL =
+  process.env.NEXT_PUBLIC_FORMSUBMIT_EMAIL || site.email;
 
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
@@ -22,30 +27,20 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const data = Object.fromEntries(new FormData(form));
 
-    // No key configured yet — fail gracefully with a helpful message.
-    if (!ACCESS_KEY) {
-      setStatus("error");
-      setError(
-        "The form isn't connected yet. Please call us at " +
-          site.phone +
-          " and we'll take care of you right away.",
-      );
-      return;
-    }
-
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch(`https://formsubmit.co/ajax/${LEAD_EMAIL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
-          access_key: ACCESS_KEY,
-          subject: `New Lead from ${site.name} Website`,
-          from_name: site.name,
+          _subject: `New Lead from ${site.name} Website`,
+          _template: "table", // clean, readable email layout
+          _captcha: "false", // we use our own honeypot below
           ...data,
         }),
       });
       const json = await res.json();
-      if (json.success) {
+      // FormSubmit returns success as the string "true".
+      if (json.success === "true" || json.success === true) {
         setStatus("success");
         form.reset();
       } else {
@@ -92,10 +87,10 @@ export default function ContactForm() {
         Fill out the form and we&apos;ll contact you to confirm your appointment.
       </p>
 
-      {/* Honeypot — hidden from users, catches bots */}
+      {/* Honeypot — FormSubmit silently drops any submission where _honey is filled */}
       <input
-        type="checkbox"
-        name="botcheck"
+        type="text"
+        name="_honey"
         tabIndex={-1}
         autoComplete="off"
         className="hidden"
