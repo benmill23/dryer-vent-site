@@ -18,7 +18,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid items-start gap-6 lg:grid-cols-3">
+        <div className="grid items-stretch gap-6 lg:grid-cols-3">
           {packages.map((p) => (
             <div
               key={p.name}
