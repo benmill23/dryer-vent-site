@@ -37,7 +37,7 @@ export default function WhyUs() {
           </div>
 
           <div className="order-1 flex justify-center lg:order-2">
-            <div className="relative w-full max-w-sm">
+            <div className="relative w-full max-w-md">
               <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 text-center text-white shadow-2xl">
                 <Placeholder
                   label="Our technician at work"
@@ -72,6 +72,19 @@ export default function WhyUs() {
                     </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Trust badge attached to the photo */}
+              <div className="absolute -bottom-5 left-0 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:-left-5">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
+                  {site.yearsExperience}
+                </span>
+                <span className="text-left">
+                  <span className="block text-sm text-amber-400">★★★★★</span>
+                  <span className="block text-xs font-semibold text-ink-600">
+                    Trusted across Metro {site.city}
+                  </span>
+                </span>
               </div>
             </div>
           </div>

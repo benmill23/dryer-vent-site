@@ -72,7 +72,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="animate-fade-up-2 flex flex-col items-center gap-6">
+          <div className="animate-fade-up-2 flex justify-center">
             {/* Logo as the hero centerpiece — standalone, no background */}
             <Image
               src="/logo.png"
@@ -82,18 +82,6 @@ export default function Hero() {
               priority
               className="h-auto w-auto max-h-96 drop-shadow-xl sm:max-h-[34rem]"
             />
-            {/* Trust badge, centered below the logo */}
-            <div className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-card">
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
-                {site.yearsExperience}
-              </span>
-              <span className="text-left">
-                <span className="block text-sm text-amber-400">★★★★★</span>
-                <span className="block text-xs font-semibold text-ink-600">
-                  Trusted across Metro {site.city}
-                </span>
-              </span>
-            </div>
           </div>
         </div>
       </div>
