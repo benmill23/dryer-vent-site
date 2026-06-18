@@ -73,20 +73,18 @@ export default function Hero() {
           </div>
 
           <div className="animate-fade-up-2 relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md">
-              {/* Logo as the hero centerpiece */}
-              <div className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-white to-brand-50 p-10 shadow-2xl ring-1 ring-black/5 sm:p-14">
-                <Image
-                  src="/logo.png"
-                  alt={site.name}
-                  width={300}
-                  height={441}
-                  priority
-                  className="h-auto w-auto max-h-64 sm:max-h-72"
-                />
-              </div>
+            <div className="relative inline-block">
+              {/* Logo as the hero centerpiece — standalone, no background */}
+              <Image
+                src="/logo.png"
+                alt={site.name}
+                width={600}
+                height={885}
+                priority
+                className="h-auto w-auto max-h-80 drop-shadow-xl sm:max-h-[26rem]"
+              />
               {/* Floating trust badge */}
-              <div className="absolute -bottom-5 left-4 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
+              <div className="absolute -bottom-2 -left-2 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
                   {site.yearsExperience}
                 </span>
