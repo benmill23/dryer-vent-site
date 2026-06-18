@@ -20,14 +20,15 @@ export default function FloatingBand() {
       />
 
       <div className="relative mx-auto max-w-3xl px-5">
-        {/* Floating brand emblem */}
-        <div className="animate-float mx-auto inline-flex items-center justify-center rounded-3xl bg-white p-5 shadow-2xl ring-1 ring-black/5">
+        {/* Floating technician photo */}
+        <div className="animate-float mx-auto w-full max-w-md overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
           <Image
-            src="/logo.png"
-            alt={site.name}
-            width={110}
-            height={162}
-            className="h-24 w-auto"
+            src="/technician.png"
+            alt={`${site.shortName} technician cleaning an exterior dryer vent`}
+            width={1713}
+            height={918}
+            sizes="(max-width: 768px) 100vw, 28rem"
+            className="h-full w-full object-cover"
           />
         </div>
 
