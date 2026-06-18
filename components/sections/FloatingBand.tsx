@@ -21,15 +21,24 @@ export default function FloatingBand() {
 
       <div className="relative mx-auto max-w-3xl px-5">
         {/* Floating technician photo */}
-        <div className="animate-float mx-auto w-full max-w-md overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
+        <div className="animate-float relative mx-auto w-full max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
           <Image
             src="/technician.png"
             alt={`${site.shortName} technician cleaning an exterior dryer vent`}
             width={1713}
             height={918}
-            sizes="(max-width: 768px) 100vw, 28rem"
+            sizes="(max-width: 768px) 100vw, 32rem"
             className="h-full w-full object-cover"
           />
+          {/* 5-star rating badge on the image */}
+          <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 shadow-lg backdrop-blur">
+            <span className="flex gap-0.5 text-amber-400">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Icon key={i} name="star" className="h-4 w-4" />
+              ))}
+            </span>
+            <span className="text-xs font-bold text-ink-700">5.0 Rating</span>
+          </div>
         </div>
 
         <h2 className="mt-8 text-3xl font-extrabold leading-tight sm:text-4xl">
