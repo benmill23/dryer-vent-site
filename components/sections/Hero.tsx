@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="mx-auto max-w-6xl px-5">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="text-center lg:text-left">
-            <span className="inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-sm font-semibold text-brand-700">
+            <span className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-sm font-semibold text-brand-700">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
@@ -19,18 +19,20 @@ export default function Hero() {
               Same-Day Service Available
             </span>
 
-            <h1 className="mt-5 text-4xl font-extrabold leading-[1.12] text-ink-900 sm:text-5xl">
-              Professional <span className="text-brand-600">Dryer Vent Cleaning</span> in {site.city}, {site.state}
+            <h1 className="animate-fade-up-1 mt-5 text-4xl font-extrabold leading-[1.12] text-ink-900 sm:text-5xl">
+              Professional{" "}
+              <span className="text-shimmer">Dryer Vent Cleaning</span> in{" "}
+              {site.city}, {site.state}
             </h1>
 
-            <p className="mt-5 text-lg leading-relaxed text-ink-600">
+            <p className="animate-fade-up-2 mt-5 text-lg leading-relaxed text-ink-600">
               Protect your home and family from fire hazards, cut your energy
               bills, and extend the life of your dryer with expert vent cleaning
               from a local, family-owned team with {site.yearsExperience} years
               of experience.
             </p>
 
-            <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 lg:justify-start">
+            <div className="animate-fade-up-2 mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 lg:justify-start">
               {trustBadges.map((b) => (
                 <div
                   key={b}
@@ -42,10 +44,10 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            <div className="animate-fade-up-3 mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href={`tel:${site.phoneRaw}`}
-                className="inline-flex items-center justify-center gap-2.5 rounded-lg bg-brand-600 px-8 py-4 text-lg font-bold text-white shadow-lg shadow-brand-600/20 transition-colors hover:bg-brand-800"
+                className="cta-glow inline-flex items-center justify-center gap-2.5 rounded-lg bg-brand-600 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-800"
               >
                 <Icon name="phone" className="h-5 w-5" />
                 Call {site.phone}
@@ -58,7 +60,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <p className="mt-5 text-sm text-ink-500">
+            <p className="animate-fade-up-3 mt-5 text-sm text-ink-500">
               ⭐️⭐️⭐️⭐️⭐️ Trusted by homeowners across Metro {site.city}
             </p>
           </div>

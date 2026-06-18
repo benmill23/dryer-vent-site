@@ -8,10 +8,10 @@ import { site } from "@/lib/site";
 
 const navLinks = [
   { href: "/#services", label: "Services" },
-  { href: "/#pricing", label: "Pricing" },
   { href: "/dryer-vent-cleaning", label: "Service Areas" },
   { href: "/commercial", label: "Commercial" },
-  { href: "/#reviews", label: "Reviews" },
+  { href: "/property-managers", label: "Property Managers" },
+  { href: "/short-term-rentals", label: "Short-Term Rentals" },
   { href: "/#faq", label: "FAQ" },
 ];
 
@@ -26,13 +26,13 @@ export default function Header() {
             <Image
               src="/logo.png"
               alt={site.name}
-              width={44}
-              height={65}
+              width={68}
+              height={100}
               priority
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
             <span className="hidden sm:flex flex-col leading-tight">
-              <span className="text-xl font-extrabold text-brand-800">
+              <span className="text-2xl font-extrabold text-brand-800">
                 {site.shortName}
               </span>
               <span className="text-[0.7rem] font-semibold uppercase tracking-[1.5px] text-ink-500">
@@ -41,7 +41,7 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-7">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((l) => (
               <a
                 key={l.href}
@@ -67,7 +67,7 @@ export default function Header() {
             </div>
             <a
               href={`tel:${site.phoneRaw}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-3 font-bold text-white hover:bg-brand-800 transition-colors"
+              className="cta-glow inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-3 font-bold text-white hover:bg-brand-800 transition-colors"
             >
               <Icon name="phone" className="h-[18px] w-[18px]" />
               <span className="hidden sm:inline">Call Now</span>

@@ -13,9 +13,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt={site.name}
-                width={48}
-                height={70}
-                className="h-14 w-auto"
+                width={64}
+                height={94}
+                className="h-18 w-auto"
               />
               <span className="text-lg font-bold leading-tight">
                 {site.shortName}
@@ -84,6 +84,22 @@ export default function Footer() {
                   className="text-sm text-white/70 hover:text-white"
                 >
                   Commercial &amp; Multi-Unit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/property-managers"
+                  className="text-sm text-white/70 hover:text-white"
+                >
+                  Property Managers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/short-term-rentals"
+                  className="text-sm text-white/70 hover:text-white"
+                >
+                  Short-Term Rentals
                 </a>
               </li>
               <li>

@@ -1,20 +1,23 @@
 import Icon from "@/components/Icon";
 import { packages, addOns, guarantee, site } from "@/lib/site";
 
+// Quote-only section. We intentionally do NOT publish prices — every job is
+// quoted up front after we understand the vent run, access, and condition.
 export default function Pricing() {
   return (
     <section id="pricing" className="section bg-white">
       <div className="mx-auto max-w-6xl px-5">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-brand-600">
-            Simple, Honest Pricing
+            Free, No-Obligation Quotes
           </span>
           <h2 className="mt-2 text-3xl font-extrabold text-ink-900 sm:text-4xl">
-            Upfront Pricing, No Surprises
+            Upfront Quotes, No Surprises
           </h2>
           <p className="mt-3 text-lg text-ink-600">
-            We quote a flat price before any work begins. No trip fees, no
-            inspection fees, no hidden charges — just honest service.
+            Every vent run is different, so we quote a flat price before any
+            work begins — no trip fees, no inspection fees, no hidden charges.
+            Here&apos;s exactly what&apos;s included.
           </p>
         </div>
 
@@ -37,42 +40,16 @@ export default function Pricing() {
               <h3 className="text-lg font-bold text-ink-900">{p.name}</h3>
               <p className="text-sm text-ink-500">{p.tagline}</p>
 
-              <div className="mt-4 flex items-baseline gap-1">
-                {p.priceFrom === "Custom" ? (
-                  <span className="text-3xl font-extrabold text-ink-900">
-                    Custom Quote
-                  </span>
-                ) : (
-                  <>
-                    <span className="text-sm font-semibold text-ink-500">
-                      from
-                    </span>
-                    <span className="text-4xl font-extrabold text-ink-900">
-                      ${p.priceFrom}
-                    </span>
-                  </>
-                )}
+              <div className="mt-4">
+                <span className="inline-flex items-center gap-2 rounded-full bg-brand-50 px-4 py-1.5 text-sm font-bold text-brand-700">
+                  <Icon name="check" className="h-4 w-4 text-success" />
+                  Free Quote
+                </span>
               </div>
 
               <p className="mt-3 text-sm leading-relaxed text-ink-600">
                 {p.blurb}
               </p>
-
-              {p.tiers.length > 0 && (
-                <div className="mt-4 space-y-1.5 rounded-xl bg-brand-50 p-4">
-                  {p.tiers.map((t) => (
-                    <div
-                      key={t.label}
-                      className="flex items-center justify-between text-sm"
-                    >
-                      <span className="text-ink-600">{t.label}</span>
-                      <span className="font-bold text-brand-800">
-                        ${t.price}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              )}
 
               <ul className="mt-5 flex-1 space-y-2.5">
                 {p.features.map((f) => (
@@ -110,17 +87,21 @@ export default function Pricing() {
               {addOns.map((a) => (
                 <div
                   key={a.name}
-                  className="rounded-xl bg-white p-4 text-center shadow-soft"
+                  className="flex items-center gap-2.5 rounded-xl bg-white p-4 text-left shadow-soft"
                 >
-                  <div className="text-lg font-extrabold text-brand-700">
-                    ${a.price}
-                  </div>
-                  <div className="mt-1 text-xs leading-snug text-ink-600">
+                  <Icon
+                    name="check"
+                    className="h-4 w-4 flex-shrink-0 text-success"
+                  />
+                  <div className="text-xs font-semibold leading-snug text-ink-700">
                     {a.name}
                   </div>
                 </div>
               ))}
             </div>
+            <p className="mt-3 text-xs text-ink-500">
+              Add-ons are quoted alongside your cleaning — just ask.
+            </p>
           </div>
 
           <div className="flex flex-col justify-center rounded-2xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 text-white">
@@ -142,7 +123,7 @@ export default function Pricing() {
           >
             {site.phone}
           </a>{" "}
-          for an exact, no-obligation quote.
+          for a fast, no-obligation quote.
         </p>
       </div>
     </section>

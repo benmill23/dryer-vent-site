@@ -87,28 +87,18 @@ export const commercialProcess = [
   },
 ] as const;
 
-// EDITABLE PLACEHOLDER pricing model. These are typical commercial benchmarks —
-// confirm against your real costs before quoting. Commercial work is bid per
-// property, so we present a model rather than fixed tiers.
+// Commercial work is quote-only — every property is bid individually after a
+// free on-site assessment. We intentionally do NOT publish per-unit prices.
+export const commercialBidIncludes = [
+  "Free on-site walkthrough & unit count",
+  "Clear, itemized written bid",
+  "Volume & recurring-contract discounts",
+  "Phased scheduling around residents",
+  "Unit-by-unit completion report",
+];
+
 export const commercialPricing = {
-  items: [
-    {
-      label: "Standard residential-style units",
-      price: "$30–40",
-      unit: "per dryer",
-    },
-    {
-      label: "High-rise / roof-vented units",
-      price: "$100–125",
-      unit: "per vent",
-    },
-    {
-      label: "Typical project minimum",
-      price: "from $1,800",
-      unit: "per visit",
-    },
-  ],
-  note: "Volume discounts for larger properties and recurring maintenance contracts. Every property is bid individually after a free on-site assessment.",
+  note: "Every property is bid individually after a free on-site assessment, with volume discounts for larger communities and recurring maintenance contracts.",
 };
 
 export const commercialFaqs = [
