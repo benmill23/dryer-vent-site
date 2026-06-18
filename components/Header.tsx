@@ -6,12 +6,19 @@ import Link from "next/link";
 import Icon from "@/components/Icon";
 import { site } from "@/lib/site";
 
-const navLinks = [
+const mainLinks = [
   { href: "/#services", label: "Services" },
   { href: "/dryer-vent-cleaning", label: "Service Areas" },
-  { href: "/commercial", label: "Commercial" },
+];
+
+const propertyLinks = [
+  { href: "/commercial", label: "Commercial & Multi-Unit" },
   { href: "/property-managers", label: "Property Managers" },
   { href: "/short-term-rentals", label: "Short-Term Rentals" },
+];
+
+const endLinks = [
+  { href: "/#reviews", label: "Reviews" },
   { href: "/#faq", label: "FAQ" },
 ];
 
@@ -21,28 +28,69 @@ export default function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur shadow-[0_1px_3px_rgba(0,0,0,0.08)]">
       <div className="mx-auto max-w-6xl px-5">
-        <div className="flex items-center justify-between py-2.5">
-          <Link href="/" className="flex items-center gap-3" aria-label={site.name}>
+        <div className="flex items-center justify-between py-2">
+          <Link
+            href="/"
+            className="flex items-center gap-2.5"
+            aria-label={site.name}
+          >
             <Image
               src="/logo.png"
               alt={site.name}
-              width={68}
-              height={100}
+              width={55}
+              height={81}
               priority
-              className="h-20 w-auto"
+              className="h-16 w-auto"
             />
             <span className="hidden sm:flex flex-col leading-tight">
-              <span className="text-2xl font-extrabold text-brand-800">
+              <span className="text-xl font-extrabold text-brand-800">
                 {site.shortName}
               </span>
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[1.5px] text-ink-500">
+              <span className="text-[0.65rem] font-semibold uppercase tracking-[1.5px] text-ink-500">
                 {site.tagline}
               </span>
             </span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
-            {navLinks.map((l) => (
+            {mainLinks.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="text-sm font-semibold text-ink-700 hover:text-brand-600 transition-colors"
+              >
+                {l.label}
+              </a>
+            ))}
+
+            {/* Properties dropdown — groups Commercial / PM / STR */}
+            <div className="relative group">
+              <button
+                type="button"
+                className="flex items-center gap-1 text-sm font-semibold text-ink-700 hover:text-brand-600 transition-colors"
+              >
+                For Properties
+                <Icon
+                  name="arrow"
+                  className="h-4 w-4 rotate-90 text-ink-300 transition-transform group-hover:translate-y-0.5"
+                />
+              </button>
+              <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                <div className="w-60 rounded-xl border border-ink-100 bg-white p-2 shadow-card">
+                  {propertyLinks.map((l) => (
+                    <a
+                      key={l.href}
+                      href={l.href}
+                      className="block rounded-lg px-3 py-2 text-sm font-semibold text-ink-700 transition-colors hover:bg-brand-50 hover:text-brand-600"
+                    >
+                      {l.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {endLinks.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
@@ -54,7 +102,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <div className="hidden md:block text-right">
+            <div className="hidden xl:block text-right">
               <div className="text-[0.7rem] uppercase tracking-wide text-ink-500">
                 Call for same-day service
               </div>
@@ -86,7 +134,7 @@ export default function Header() {
 
         {open && (
           <nav className="lg:hidden border-t border-ink-100 py-3">
-            {navLinks.map((l) => (
+            {[...mainLinks, ...propertyLinks, ...endLinks].map((l) => (
               <a
                 key={l.href}
                 href={l.href}
