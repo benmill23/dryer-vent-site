@@ -80,7 +80,7 @@ export default function Hero() {
               width={600}
               height={885}
               priority
-              className="h-auto w-auto max-h-96 drop-shadow-xl sm:max-h-[34rem]"
+              className="animate-float h-auto w-auto max-h-[28rem] drop-shadow-xl sm:max-h-[38rem]"
             />
           </div>
         </div>

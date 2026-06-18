@@ -75,7 +75,7 @@ export default function WhyUs() {
               </div>
 
               {/* Trust badge attached to the photo */}
-              <div className="absolute -bottom-5 left-0 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:-left-5">
+              <div className="absolute -bottom-6 left-2 flex items-center gap-3 rounded-2xl border border-ink-100 bg-white p-4 shadow-xl ring-1 ring-black/5 sm:-left-6">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
                   {site.yearsExperience}
                 </span>
