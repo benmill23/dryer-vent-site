@@ -86,8 +86,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Curve down into the deep-blue Risks band */}
-      <Wave fill="#0c2340" layered />
+      {/* Curve down into the bright-blue band */}
+      <Wave fill="#2563eb" layered />
     </section>
   );
 }

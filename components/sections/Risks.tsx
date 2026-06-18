@@ -4,7 +4,7 @@ import { risks } from "@/lib/site";
 
 export default function Risks() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-600 to-brand-800 pt-12 pb-36 text-white md:pb-44">
+    <section className="relative overflow-hidden bg-brand-900 pt-12 pb-36 text-white md:pb-44">
       <div className="relative mx-auto max-w-6xl px-5">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
