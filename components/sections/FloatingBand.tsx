@@ -8,7 +8,7 @@ import { site, trustBadges } from "@/lib/site";
 // blue background, bridging the deep-blue band above and the white below.
 export default function FloatingBand() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brand-600 to-brand-800 pt-16 pb-36 text-center text-white md:pb-44">
+    <section className="relative overflow-hidden bg-brand-900 pt-16 pb-36 text-center text-white md:pb-44">
       {/* decorative glows */}
       <div
         aria-hidden="true"
@@ -72,8 +72,8 @@ export default function FloatingBand() {
         </a>
       </div>
 
-      {/* Curve down into the white content below */}
-      <Wave fill="#ffffff" layered />
+      {/* Curve down into the bright-blue Risks band */}
+      <Wave fill="#2563eb" layered />
     </section>
   );
 }

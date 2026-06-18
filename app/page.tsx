@@ -16,8 +16,8 @@ export default function Home() {
     <>
       <JsonLd />
       <Hero />
-      <Risks />
       <FloatingBand />
+      <Risks />
       <Services />
       <Pricing />
       <Process />
