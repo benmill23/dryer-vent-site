@@ -1,6 +1,7 @@
 import JsonLd from "@/components/JsonLd";
 import Hero from "@/components/sections/Hero";
 import Risks from "@/components/sections/Risks";
+import FloatingBand from "@/components/sections/FloatingBand";
 import Services from "@/components/sections/Services";
 import Pricing from "@/components/sections/Pricing";
 import Process from "@/components/sections/Process";
@@ -16,6 +17,7 @@ export default function Home() {
       <JsonLd />
       <Hero />
       <Risks />
+      <FloatingBand />
       <Services />
       <Pricing />
       <Process />

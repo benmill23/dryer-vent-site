@@ -1,17 +1,24 @@
+import Image from "next/image";
 import Icon from "@/components/Icon";
-import Placeholder from "@/components/Placeholder";
+import Wave from "@/components/Wave";
 import { site, trustBadges } from "@/lib/site";
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="bg-gradient-to-b from-brand-50 to-white pt-28 pb-16 md:pt-32 md:pb-24"
+      className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-brand-100/60 to-brand-50 pt-28 pb-36 md:pt-32 md:pb-44"
     >
-      <div className="mx-auto max-w-6xl px-5">
+      {/* soft decorative blue glow */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-32 -top-24 h-96 w-96 rounded-full bg-brand-200/40 blur-3xl"
+      />
+
+      <div className="relative mx-auto max-w-6xl px-5">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="text-center lg:text-left">
-            <span className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-brand-100 px-4 py-1.5 text-sm font-semibold text-brand-700">
+            <span className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-brand-700 shadow-soft">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
@@ -54,7 +61,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-ink-200 bg-white px-8 py-4 text-lg font-semibold text-ink-700 transition-colors hover:border-brand-600 hover:text-brand-600"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand-200 bg-white px-8 py-4 text-lg font-semibold text-ink-700 transition-colors hover:border-brand-600 hover:text-brand-600"
               >
                 Get a Free Quote
               </a>
@@ -65,13 +72,19 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="relative">
-            <Placeholder
-              label="Technician cleaning a dryer vent"
-              aspect="4 / 3"
-              priority
-              className="shadow-2xl"
-            />
+          <div className="animate-fade-up-2 relative">
+            {/* Real technician photo */}
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl ring-1 ring-black/5">
+              <Image
+                src="/technician.png"
+                alt="1st Choice technician cleaning an exterior dryer vent"
+                width={1713}
+                height={918}
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="h-full w-full object-cover"
+              />
+            </div>
             {/* Floating trust badge */}
             <div className="absolute -bottom-5 left-4 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
               <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
@@ -87,6 +100,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Curve down into the deep-blue Risks band */}
+      <Wave fill="#0c2340" layered />
     </section>
   );
 }

@@ -3,7 +3,7 @@ import { process } from "@/lib/site";
 
 export default function Process() {
   return (
-    <section className="section bg-ink-50">
+    <section className="section bg-gradient-to-b from-brand-50 to-white">
       <div className="mx-auto max-w-6xl px-5">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-brand-600">

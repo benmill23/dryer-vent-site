@@ -1,10 +1,11 @@
 import Icon, { type IconName } from "@/components/Icon";
+import Wave from "@/components/Wave";
 import { risks } from "@/lib/site";
 
 export default function Risks() {
   return (
-    <section className="section bg-brand-900 text-white">
-      <div className="mx-auto max-w-6xl px-5">
+    <section className="relative overflow-hidden bg-brand-900 pt-12 pb-36 text-white md:pb-44">
+      <div className="relative mx-auto max-w-6xl px-5">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <h2 className="text-3xl font-extrabold sm:text-4xl">
             The Risks of a Neglected Dryer Vent
@@ -48,6 +49,9 @@ export default function Risks() {
           </p>
         </div>
       </div>
+
+      {/* Curve down into the bright-blue floating band */}
+      <Wave fill="#2563eb" />
     </section>
   );
 }

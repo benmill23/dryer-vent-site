@@ -1,12 +1,17 @@
 import Link from "next/link";
 import Icon from "@/components/Icon";
+import Wave from "@/components/Wave";
 import { serviceAreas, site } from "@/lib/site";
 import { locations } from "@/lib/locations";
 
 export default function ServiceArea() {
   return (
-    <section id="service-area" className="section bg-brand-600 text-white">
-      <div className="mx-auto max-w-5xl px-5 text-center">
+    <section
+      id="service-area"
+      className="relative overflow-hidden bg-brand-600 pt-28 pb-28 text-white md:pt-32 md:pb-32"
+    >
+      <Wave fill="#ffffff" position="top" />
+      <div className="relative mx-auto max-w-5xl px-5 text-center">
         <h2 className="text-3xl font-extrabold sm:text-4xl">
           Serving All of Metro {site.city}
         </h2>
@@ -57,6 +62,7 @@ export default function ServiceArea() {
           </Link>
         </div>
       </div>
+      <Wave fill="#ffffff" position="bottom" />
     </section>
   );
 }

@@ -13,7 +13,7 @@ function Stars({ n }: { n: number }) {
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="section bg-ink-50">
+    <section id="reviews" className="section bg-white">
       <div className="mx-auto max-w-6xl px-5">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-brand-600">

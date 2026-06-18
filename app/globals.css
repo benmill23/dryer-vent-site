@@ -110,6 +110,21 @@ body {
   animation: text-shimmer 4s linear infinite;
 }
 
+/* Gentle floating bob for the transitional emblem */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4.5s ease-in-out infinite;
+}
+
 /* Pulsing glow ring on primary "Call Now" buttons */
 @keyframes cta-glow {
   0%,
@@ -135,6 +150,7 @@ body {
   .animate-fade-up-2,
   .animate-fade-up-3,
   .text-shimmer,
+  .animate-float,
   .cta-glow {
     animation: none;
   }
