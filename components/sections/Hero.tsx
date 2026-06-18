@@ -72,29 +72,27 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="animate-fade-up-2 relative flex justify-center">
-            <div className="relative inline-block">
-              {/* Logo as the hero centerpiece — standalone, no background */}
-              <Image
-                src="/logo.png"
-                alt={site.name}
-                width={600}
-                height={885}
-                priority
-                className="h-auto w-auto max-h-96 drop-shadow-xl sm:max-h-[34rem]"
-              />
-              {/* Floating trust badge */}
-              <div className="absolute -bottom-2 -left-2 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
-                  {site.yearsExperience}
+          <div className="animate-fade-up-2 flex flex-col items-center gap-6">
+            {/* Logo as the hero centerpiece — standalone, no background */}
+            <Image
+              src="/logo.png"
+              alt={site.name}
+              width={600}
+              height={885}
+              priority
+              className="h-auto w-auto max-h-96 drop-shadow-xl sm:max-h-[34rem]"
+            />
+            {/* Trust badge, centered below the logo */}
+            <div className="flex items-center gap-3 rounded-2xl bg-white p-4 shadow-card">
+              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-100 text-base font-extrabold text-brand-700">
+                {site.yearsExperience}
+              </span>
+              <span className="text-left">
+                <span className="block text-sm text-amber-400">★★★★★</span>
+                <span className="block text-xs font-semibold text-ink-600">
+                  Trusted across Metro {site.city}
                 </span>
-                <span className="text-left">
-                  <span className="block text-sm text-amber-400">★★★★★</span>
-                  <span className="block text-xs font-semibold text-ink-600">
-                    Trusted across Metro {site.city}
-                  </span>
-                </span>
-              </div>
+              </span>
             </div>
           </div>
         </div>
