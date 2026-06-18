@@ -72,7 +72,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="animate-fade-up-2 relative flex justify-center lg:justify-end">
+          <div className="animate-fade-up-2 relative flex justify-center">
             <div className="relative inline-block">
               {/* Logo as the hero centerpiece — standalone, no background */}
               <Image
