@@ -107,9 +107,10 @@ export default function ContactForm() {
           placeholder="(615) 000-0000"
         />
         <Field
-          label="Email (optional)"
+          label="Email"
           name="email"
           type="email"
+          required
           placeholder="you@example.com"
         />
         <div>
