@@ -81,7 +81,7 @@ export default function Hero() {
                 width={600}
                 height={885}
                 priority
-                className="h-auto w-auto max-h-80 drop-shadow-xl sm:max-h-[26rem]"
+                className="h-auto w-auto max-h-96 drop-shadow-xl sm:max-h-[34rem]"
               />
               {/* Floating trust badge */}
               <div className="absolute -bottom-2 -left-2 hidden items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:flex">
