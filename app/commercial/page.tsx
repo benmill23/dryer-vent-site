@@ -100,6 +100,7 @@ export default function CommercialPage() {
             <Placeholder
               label="Multi-unit property laundry facility"
               aspect="4 / 3"
+              src="/multi-unit-laundry-facility.jpg"
               className="shadow-card"
             />
             <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">

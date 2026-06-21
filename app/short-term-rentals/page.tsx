@@ -134,6 +134,7 @@ export default function ShortTermRentalsPage() {
               <Placeholder
                 label="Fresh linens in a short-term rental"
                 aspect="4 / 3"
+                src="/fresh-linens-apartment-unit.jpg"
                 className="shadow-card"
               />
               <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">

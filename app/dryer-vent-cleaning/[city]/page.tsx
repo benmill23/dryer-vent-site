@@ -116,6 +116,7 @@ export default async function LocationPage({ params }: Props) {
             <Placeholder
               label={`Dryer vent cleaning in ${loc.city}`}
               aspect="4 / 3"
+              src="/dryer-vent-super-dirty.jpg"
               className="shadow-card"
             />
             <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">

@@ -42,6 +42,7 @@ export default function WhyUs() {
                 <Placeholder
                   label="Our technician at work"
                   aspect="4 / 3"
+                  src="/industrial-dryer-vent.jpeg"
                   className="ring-1 ring-white/20"
                 />
                 <div className="mt-5 grid grid-cols-2 gap-4">

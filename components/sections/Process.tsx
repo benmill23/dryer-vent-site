@@ -46,13 +46,13 @@ export default function Process() {
           </p>
           <div className="mt-5 grid gap-5 sm:grid-cols-2">
             <div className="relative">
-              <Placeholder label="Lint-clogged vent before cleaning" aspect="4 / 3" />
+              <Placeholder label="Lint-clogged vent before cleaning" aspect="4 / 3" src="/dryer-vent-dirty.jpg" />
               <span className="absolute left-3 top-3 rounded-full bg-ink-900/80 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
                 Before
               </span>
             </div>
             <div className="relative">
-              <Placeholder label="Clean, clear vent after service" aspect="4 / 3" />
+              <Placeholder label="Clean, clear vent after service" aspect="4 / 3" src="/dryer-vent-clean.jpg" />
               <span className="absolute left-3 top-3 rounded-full bg-success px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">
                 After
               </span>

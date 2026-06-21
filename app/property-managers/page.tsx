@@ -134,6 +134,7 @@ export default function PropertyManagersPage() {
               <Placeholder
                 label="Apartment community laundry maintenance"
                 aspect="4 / 3"
+                src="/apartment-unit-laundry-room.jpg"
                 className="shadow-card"
               />
               <div className="rounded-2xl border border-ink-100 bg-white p-6 shadow-card">

@@ -39,8 +39,9 @@ export default function ServiceAreasHub() {
 
           <div className="mx-auto mt-12 max-w-4xl">
             <Placeholder
-              label={`Our service van across Metro ${site.city}`}
+              label="Dryer vent before and after a professional cleaning"
               aspect="16 / 9"
+              src="/clean-dryer-vent-vs-dirty.jpg"
               className="shadow-card"
               priority
             />
