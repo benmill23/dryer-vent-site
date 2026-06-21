@@ -78,7 +78,7 @@ export const commercialProcess = [
   {
     step: "3",
     title: "Systematic Cleaning",
-    text: "Each unit's full vent run is brushed, air-whipped, and airflow-tested — including booster-fan and roof systems.",
+    text: "Each unit's full vent run is cleaned with professional equipment and airflow-tested — including booster-fan and roof systems.",
   },
   {
     step: "4",

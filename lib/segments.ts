@@ -75,7 +75,7 @@ export const pmProcess = [
   {
     step: "3",
     title: "Systematic Cleaning",
-    text: "Each unit's full vent run is brushed, air-whipped, and airflow-tested — booster-fan and roof systems included.",
+    text: "Each unit's full vent run is cleaned with professional equipment and airflow-tested — booster-fan and roof systems included.",
   },
   {
     step: "4",
@@ -184,7 +184,7 @@ export const strProcess = [
   {
     step: "3",
     title: "Full Vent Clean",
-    text: "We brush and air-whip the entire vent run, clear the exterior cap, and confirm strong airflow so linens dry in one cycle.",
+    text: "Using professional equipment, we clean the entire vent run, clear the exterior cap, and confirm strong airflow so linens dry in one cycle.",
   },
   {
     step: "4",

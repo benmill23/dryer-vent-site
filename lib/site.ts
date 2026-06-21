@@ -151,7 +151,7 @@ export const process = [
   {
     step: "3",
     title: "Deep Clean",
-    text: "We brush and air-whip the entire duct from dryer to exterior cap, capturing all lint and debris.",
+    text: "Using professional equipment, we clean the entire duct from dryer to exterior cap, capturing all lint and debris.",
   },
   {
     step: "4",
@@ -179,7 +179,7 @@ export const packages = [
       { label: "Roof vent", price: "249" },
     ],
     features: [
-      "Full duct brush + air-whip cleaning",
+      "Full duct cleaning with professional equipment",
       "Lint & debris fully removed",
       "Exterior vent cap cleared & checked",
       "Before/after airflow test",
@@ -228,6 +228,8 @@ export const packages = [
 export const addOns = [
   { name: "Crush-resistant vent hose upgrade", price: "69" },
   { name: "Magnetic exterior vent cover", price: "89" },
+  { name: "Louvre flush-mount vents", price: "" },
+  { name: "Sturdy metal cap vents", price: "" },
 ];
 
 export const guarantee =
@@ -285,7 +287,6 @@ export const serviceAreas = [
   "Robertson County",
   "Cheatham County",
   "Maury County",
-  "Montgomery County",
 ];
 
 export const cities = [
@@ -298,7 +299,6 @@ export const cities = [
   "Smyrna",
   "Gallatin",
   "Spring Hill",
-  "Clarksville",
   "Goodlettsville",
   "Antioch",
 ];
