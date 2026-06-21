@@ -202,7 +202,7 @@ export const locations: Location[] = [
     intro:
       "Bellevue is a family-friendly West Nashville community of wooded lots and single-family homes along the Harpeth River. We keep Bellevue dryers safe and efficient with same-day service.",
     angle:
-      "Bellevue's wooded setting means more exterior vent caps blocked by debris, leaves, and the occasional bird nest — worth checking with every cleaning.",
+      "Bellevue's wooded setting means more exterior vent caps blocked by debris and leaves — worth checking with every cleaning.",
     geo: { lat: 36.0717, lng: -86.9472 },
   },
 ];

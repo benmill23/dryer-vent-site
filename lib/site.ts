@@ -14,7 +14,7 @@ export const site = {
   stateLong: "Tennessee",
   phone: "(615) 998-9770",
   phoneRaw: "6159989770",
-  email: "info@1stchoicedryervent.com",
+  email: "1stchoicedryervent@gmail.com",
   yearsExperience: "30+",
   foundedYear: 1992,
   parent: {
@@ -66,13 +66,6 @@ export const services = [
     short:
       "Professional installation of code-compliant rigid steel vent systems and repair of damaged or crushed dryer vents.",
     icon: "wrench",
-  },
-  {
-    slug: "bird-nest-removal",
-    title: "Vent Cap & Pest Removal",
-    short:
-      "Clearing of bird nests, rodent debris, and obstructions from exterior vents, plus pest-proof cap installation.",
-    icon: "shield",
   },
   {
     slug: "commercial-dryer-vent",
@@ -235,7 +228,6 @@ export const packages = [
 export const addOns = [
   { name: "Crush-resistant vent hose upgrade", price: "69" },
   { name: "Magnetic exterior vent cover", price: "89" },
-  { name: "Bird nest / pest removal", price: "from 49" },
 ];
 
 export const guarantee =
@@ -250,7 +242,7 @@ export const reviews = [
     name: "Sarah M.",
     location: "Brentwood, TN",
     rating: 5,
-    text: "Showed up same day and found a bird's nest packed in our vent. Our dryer runs like new and the tech was so professional. Highly recommend!",
+    text: "Showed up same day and pulled a huge amount of packed lint out of our vent. Our dryer runs like new and the tech was so professional. Highly recommend!",
   },
   {
     name: "James T.",
