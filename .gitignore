@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local-only image assets (kept on disk, not used on the site)
+/public/first-choice-appliance-truck.png
+/public/1st-first-choice-appliance-repair.jpg
+/public/thumbnail.jpg
