@@ -23,10 +23,10 @@ export default function FloatingBand() {
         {/* Floating technician photo */}
         <div className="animate-float relative mx-auto w-full max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
           <Image
-            src="/technician.png"
-            alt={`${site.shortName} technician cleaning an exterior dryer vent`}
-            width={1713}
-            height={918}
+            src="/1st-choice-appliance-truck.webp"
+            alt={`${site.shortName} service van across Metro ${site.city}`}
+            width={828}
+            height={828}
             sizes="(max-width: 768px) 100vw, 32rem"
             className="h-full w-full object-cover"
           />
