@@ -89,7 +89,13 @@ export default function Hero() {
               width={600}
               height={885}
               priority
-              className="animate-float h-auto w-auto max-h-[28rem] drop-shadow-xl sm:max-h-[38rem]"
+              className="animate-float h-auto w-auto max-h-[28rem] sm:max-h-[38rem]"
+              // Shape-fitted yellow glow: drop-shadow follows the logo's
+              // silhouette (tight + soft layers), plus a subtle dark shadow.
+              style={{
+                filter:
+                  "drop-shadow(0 0 22px rgba(250,204,21,0.65)) drop-shadow(0 0 55px rgba(250,204,21,0.40)) drop-shadow(0 10px 14px rgba(0,0,0,0.18))",
+              }}
             />
           </div>
         </div>
