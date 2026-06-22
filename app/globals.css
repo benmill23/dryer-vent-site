@@ -158,3 +158,102 @@ body {
     background-position: 0 center;
   }
 }
+
+/* =========================================================================
+   FLOATING CTA (hovers over all content) — desktop only; the mobile
+   bottom bar (StickyCta) covers phones, so this shows at lg+ to avoid overlap.
+   ========================================================================= */
+.floating-cta {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .floating-cta {
+    position: fixed;
+    z-index: 60;
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px 12px 18px;
+    border-radius: 999px;
+    background: linear-gradient(
+      135deg,
+      var(--color-brand-700),
+      var(--color-brand-800)
+    );
+    box-shadow: 0 18px 44px -12px rgba(15, 27, 45, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    animation: cta-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+.floating-cta .fc-text {
+  color: #fff;
+  line-height: 1.15;
+}
+.floating-cta .fc-text .t1 {
+  display: block;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+}
+.floating-cta .fc-text .t2 {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+.floating-cta .fc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--color-brand-600);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14.5px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.floating-cta .fc-btn:hover {
+  background: var(--color-brand-500);
+}
+.floating-cta .fc-btn svg {
+  width: 17px;
+  height: 17px;
+}
+.floating-cta .fc-close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-ink-800);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.floating-cta .fc-close svg {
+  width: 13px;
+  height: 13px;
+}
+@keyframes cta-pop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-cta {
+    animation: none;
+  }
+}

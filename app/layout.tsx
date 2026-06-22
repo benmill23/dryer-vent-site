@@ -5,6 +5,7 @@ import { site } from "@/lib/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyCta from "@/components/StickyCta";
+import FloatingCta from "@/components/FloatingCta";
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -64,6 +65,7 @@ export default function RootLayout({
         <main className="flex-1 pb-16 lg:pb-0">{children}</main>
         <Footer />
         <StickyCta />
+        <FloatingCta />
       </body>
     </html>
   );

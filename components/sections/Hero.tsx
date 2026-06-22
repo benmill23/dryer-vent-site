@@ -32,6 +32,15 @@ export default function Hero() {
               {site.city}, {site.state}
             </h1>
 
+            <a
+              href={site.parent.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="animate-fade-up-1 mt-2 inline-block text-xs font-medium text-brand-600 transition-colors hover:text-brand-800"
+            >
+              *A division of {site.parent.name}
+            </a>
+
             <p className="animate-fade-up-2 mt-5 text-lg leading-relaxed text-ink-600">
               Protect your home and family from fire hazards, cut your energy
               bills, and extend the life of your dryer with expert vent cleaning
@@ -70,15 +79,6 @@ export default function Hero() {
             <p className="animate-fade-up-3 mt-5 text-sm text-ink-500">
               ⭐️⭐️⭐️⭐️⭐️ Trusted by homeowners across Metro {site.city}
             </p>
-
-            <a
-              href={site.parent.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="animate-fade-up-3 mt-3 inline-block text-xs text-ink-400 transition-colors hover:text-brand-600"
-            >
-              *A division of {site.parent.name}
-            </a>
           </div>
 
           <div className="animate-fade-up-2 flex justify-center">
