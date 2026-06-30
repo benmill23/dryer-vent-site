@@ -137,7 +137,7 @@ export const strReasons = [
   {
     icon: "clock",
     title: "Faster Turnarounds",
-    text: "Same-day check-out to check-in only works if laundry dries on the first cycle. Clean vents keep your cleaners on schedule.",
+    text: "Fast check-out to check-in turnovers only work if laundry dries on the first cycle. Clean vents keep your cleaners on schedule.",
   },
   {
     icon: "building",

@@ -14,8 +14,8 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
-const title = `${site.name} | ${site.city}, ${site.state} | Same-Day Service`;
-const description = `Professional dryer vent cleaning in ${site.city}, ${site.state}. Prevent fires, lower energy bills, and extend dryer life. Licensed & insured, ${site.yearsExperience} years experience, same-day service. Call ${site.phone}.`;
+const title = `${site.name} | ${site.city}, ${site.state} | Licensed & Insured`;
+const description = `Professional dryer vent cleaning in ${site.city}, ${site.state}. Prevent fires, lower energy bills, and extend dryer life. Licensed & insured, ${site.yearsExperience} years experience. Call ${site.phone}.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

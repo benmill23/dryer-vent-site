@@ -8,7 +8,7 @@ import { site, serviceAreas } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Dryer Vent Cleaning Service Areas | Metro ${site.city}`,
-  description: `${site.name} provides same-day dryer vent cleaning across Metro ${site.city}, TN — including Brentwood, Franklin, Nashville, Mt. Juliet, Murfreesboro and more. Find your city.`,
+  description: `${site.name} provides professional dryer vent cleaning across Metro ${site.city}, TN — including Brentwood, Franklin, Nashville, Mt. Juliet, Murfreesboro and more. Find your city.`,
   alternates: { canonical: "/dryer-vent-cleaning" },
 };
 
@@ -25,9 +25,9 @@ export default function ServiceAreasHub() {
             Dryer Vent Cleaning <span className="text-brand-600">Near You</span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-ink-600">
-            From our base in Brentwood, we provide same-day dryer vent cleaning,
-            inspection, and repair across the greater {site.city} area. Find your
-            city below.
+            From our base in Brentwood, we provide professional dryer vent
+            cleaning, inspection, and repair across the greater {site.city} area.
+            Find your city below.
           </p>
           <a
             href={`tel:${site.phoneRaw}`}
@@ -39,9 +39,9 @@ export default function ServiceAreasHub() {
 
           <div className="mx-auto mt-12 max-w-4xl">
             <Placeholder
-              label={`Our service van across Metro ${site.city}`}
+              label={`Professional dryer vent cleaning across Metro ${site.city}`}
               aspect="16 / 9"
-              src="/1st-choice-appliance-truck.webp"
+              src="/technician.png"
               className="shadow-card"
               priority
             />
@@ -85,7 +85,7 @@ export default function ServiceAreasHub() {
                 .slice(0, 6)
                 .join(", ")}
               , and surrounding communities. Give us a call and we&apos;ll let
-              you know if we can get to you same-day.
+              you know if we can get to you.
             </p>
           </div>
         </div>

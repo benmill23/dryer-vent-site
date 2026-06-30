@@ -16,7 +16,7 @@ export default function ServiceArea() {
           Serving All of Metro {site.city}
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-lg text-white/90">
-          Same-day dryer vent cleaning available throughout the greater{" "}
+          Professional dryer vent cleaning available throughout the greater{" "}
           {site.city} area and surrounding counties.
         </p>
 

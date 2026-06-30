@@ -23,8 +23,8 @@ export default function FloatingBand() {
         {/* Floating technician photo */}
         <div className="animate-float relative mx-auto w-full max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
           <Image
-            src="/1st-choice-appliance-truck.webp"
-            alt={`${site.shortName} service van across Metro ${site.city}`}
+            src="/1st-first-choice-appliance-repair.jpg"
+            alt={`${site.shortName} technicians on the job across Metro ${site.city}`}
             width={828}
             height={828}
             sizes="(max-width: 768px) 100vw, 32rem"
@@ -46,7 +46,7 @@ export default function FloatingBand() {
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-lg leading-relaxed text-white/85">
           One call puts a licensed, insured {site.shortName} technician at your
-          door — often the same day — across Metro {site.city}.
+          door across Metro {site.city}.
         </p>
 
         <div className="mt-7 flex flex-wrap justify-center gap-x-6 gap-y-3">

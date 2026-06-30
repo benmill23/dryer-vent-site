@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!loc) return {};
 
   const title = `Dryer Vent Cleaning in ${loc.display} | ${site.shortName}`;
-  const description = `Professional dryer vent cleaning in ${loc.display}. Same-day service, licensed & insured, upfront pricing. Serving ${loc.neighborhoods
+  const description = `Professional dryer vent cleaning in ${loc.display}. Licensed & insured, upfront pricing, satisfaction guaranteed. Serving ${loc.neighborhoods
     .slice(0, 3)
     .join(", ")} and all of ${loc.county}. Call ${site.phone}.`;
 
@@ -182,7 +182,7 @@ export default async function LocationPage({ params }: Props) {
             We Also Serve These Nearby Areas
           </h2>
           <p className="mt-2 text-ink-600">
-            Same-day dryer vent cleaning across Metro {site.city}.
+            Professional dryer vent cleaning across Metro {site.city}.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             {nearby.map((n) => (

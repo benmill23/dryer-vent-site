@@ -104,7 +104,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <div className="hidden xl:block text-right">
               <div className="text-[0.7rem] uppercase tracking-wide text-ink-500">
-                Call for same-day service
+                Call for a free quote
               </div>
               <a
                 href={`tel:${site.phoneRaw}`}

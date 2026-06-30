@@ -25,7 +25,7 @@ export default function Contact() {
                 icon="phone"
                 title={site.phone}
                 href={`tel:${site.phoneRaw}`}
-                sub="Call for same-day service"
+                sub="Call for a free quote"
               />
               <ContactRow
                 icon="email"
@@ -47,10 +47,10 @@ export default function Contact() {
 
             <div className="mt-8 rounded-2xl bg-brand-50 p-6">
               <p className="font-bold text-brand-800">
-                ⚡ Same-day appointments fill fast
+                ⚡ Appointments fill fast
               </p>
               <p className="mt-1 text-sm text-ink-600">
-                Call before noon for the best chance at same-day service across
+                Call today to lock in the next available appointment across
                 Metro {site.city}.
               </p>
             </div>

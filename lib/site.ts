@@ -41,7 +41,7 @@ export const site = {
 export const trustBadges = [
   "Licensed & Insured",
   "30+ Years Experience",
-  "Same-Day Service",
+  "Free Estimates",
   "Family Owned",
 ];
 
@@ -112,8 +112,8 @@ export const risks = [
 
 export const whyUs = [
   {
-    title: "Same-Day Service Available",
-    text: "We know your time is valuable. Call before noon and we'll often be out the same day.",
+    title: "Fast, Flexible Scheduling",
+    text: "We know your time is valuable, so we work around your schedule to get your vents cleaned without the runaround.",
   },
   {
     title: "Licensed, Insured & Certified",
@@ -141,7 +141,7 @@ export const process = [
   {
     step: "1",
     title: "Call or Book Online",
-    text: "Reach out by phone or the form. We'll find a time that fits — often same-day.",
+    text: "Reach out by phone or the form. We'll find an appointment time that fits your schedule.",
   },
   {
     step: "2",
@@ -200,7 +200,7 @@ export const packages = [
       "Airflow & blockage assessment",
       "Written findings + photos",
       "Honest recommendation — no upsell",
-      "Fee credited toward same-day cleaning",
+      "Fee credited toward your cleaning",
     ],
     cta: "Book an Inspection",
     featured: false,
@@ -244,7 +244,7 @@ export const reviews = [
     name: "Sarah M.",
     location: "Brentwood, TN",
     rating: 5,
-    text: "Showed up same day and pulled a huge amount of packed lint out of our vent. Our dryer runs like new and the tech was so professional. Highly recommend!",
+    text: "They pulled a huge amount of packed lint out of our vent. Our dryer runs like new and the tech was so professional. Highly recommend!",
   },
   {
     name: "James T.",
@@ -256,7 +256,7 @@ export const reviews = [
     name: "Linda R.",
     location: "Franklin, TN",
     rating: 5,
-    text: "Booked online in the morning, done by afternoon. Clean, courteous, and quick. This is who I'll call every year from now on.",
+    text: "Booked online and they were out in no time. Clean, courteous, and quick. This is who I'll call every year from now on.",
   },
   {
     name: "Michael D.",
@@ -313,8 +313,8 @@ export const faqs = [
     a: "Most standard residential dryer vent cleanings fall in an affordable flat-rate range, and we always quote you the price before we start — no surprises. Longer runs, roof vents, or repairs may cost more, but you'll approve any pricing first.",
   },
   {
-    q: "Do you offer same-day service?",
-    a: "Yes. We keep same-day appointments open whenever possible. Call us before noon and there's a good chance we can be out the same day across the greater Nashville area.",
+    q: "How soon can you come out?",
+    a: "We'll always give you the soonest available appointment when you call, and we work to fit your schedule across the greater Nashville area. If your situation is urgent, let us know and we'll do our best to prioritize you.",
   },
   {
     q: "How long does a dryer vent cleaning take?",

@@ -23,7 +23,7 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-success" />
               </span>
-              Same-Day Service Available
+              Now Booking — Call Today
             </span>
 
             <h1 className="animate-fade-up-1 mt-5 text-4xl font-extrabold leading-[1.12] text-ink-900 sm:text-5xl">

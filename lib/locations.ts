@@ -35,7 +35,7 @@ export const locations: Location[] = [
     zips: ["37027", "37024"],
     neighborhoods: ["Governors Club", "Annandale", "Taramore", "Raintree Forest"],
     intro:
-      "Brentwood is our home base, so no one gets faster same-day dryer vent service here. The city's large estate homes often have long, winding vent runs that trap lint and choke airflow over time.",
+      "Brentwood is our home base, so no one gets faster dryer vent service here. The city's large estate homes often have long, winding vent runs that trap lint and choke airflow over time.",
     angle:
       "Brentwood's spacious single-family homes frequently have vent runs of 20+ feet with multiple bends — exactly the setup where lint accumulates fastest and fire risk climbs.",
     geo: { lat: 36.0331, lng: -86.7828 },
@@ -50,7 +50,7 @@ export const locations: Location[] = [
     zips: ["37064", "37067", "37069"],
     neighborhoods: ["Westhaven", "Fieldstone Farms", "McKay's Mill", "Historic Downtown"],
     intro:
-      "From the historic homes around downtown Franklin to master-planned neighborhoods like Westhaven, we keep Franklin dryers running safely and efficiently with same-day service.",
+      "From the historic homes around downtown Franklin to master-planned neighborhoods like Westhaven, we keep Franklin dryers running safely and efficiently.",
     angle:
       "Franklin blends century-old historic homes with original ductwork and brand-new subdivisions — both prone to vent issues, whether from age or builder-grade installs.",
     geo: { lat: 35.9251, lng: -86.8689 },
@@ -80,7 +80,7 @@ export const locations: Location[] = [
     zips: ["37174", "37179"],
     neighborhoods: ["Wades Grove", "Campbell Station", "Cherry Grove", "The Crossings"],
     intro:
-      "Spring Hill's explosive new-construction growth means thousands of newer dryer vents — and builder-grade installs that often need attention sooner than homeowners realize. We serve the whole area same-day.",
+      "Spring Hill's explosive new-construction growth means thousands of newer dryer vents — and builder-grade installs that often need attention sooner than homeowners realize. We serve the whole area.",
     angle:
       "Fast-built Spring Hill subdivisions frequently have flexible foil ducts and long runs to the exterior wall, both of which trap lint and restrict airflow quickly.",
     geo: { lat: 35.7512, lng: -86.9300 },
@@ -95,7 +95,7 @@ export const locations: Location[] = [
     zips: ["37179"],
     neighborhoods: ["Tollgate Village", "Bridgemore Village", "Canterbury"],
     intro:
-      "Thompson's Station is a fast-growing, upscale community of larger lots and newer homes. We provide thorough, same-day dryer vent cleaning across Tollgate Village, Bridgemore, and beyond.",
+      "Thompson's Station is a fast-growing, upscale community of larger lots and newer homes. We provide thorough dryer vent cleaning across Tollgate Village, Bridgemore, and beyond.",
     angle:
       "Larger Thompson's Station homes tend to have longer exterior vent runs, where even a season of lint buildup can noticeably increase drying time.",
     geo: { lat: 35.8048, lng: -86.9095 },
@@ -110,7 +110,7 @@ export const locations: Location[] = [
     zips: ["37122", "37076"],
     neighborhoods: ["Providence", "Nichols Vale", "Lake Providence", "Willoughby Station"],
     intro:
-      "Known as the \"City Between the Lakes,\" Mt. Juliet has grown fast around Providence and beyond. We keep its many family homes safe with professional, same-day dryer vent cleaning.",
+      "Known as the \"City Between the Lakes,\" Mt. Juliet has grown fast around Providence and beyond. We keep its many family homes safe with professional dryer vent cleaning.",
     angle:
       "Mt. Juliet's wave of suburban construction means lots of homes hitting the 3–5 year mark — right when a first professional vent cleaning pays off most.",
     geo: { lat: 36.2009, lng: -86.5186 },
@@ -125,7 +125,7 @@ export const locations: Location[] = [
     zips: ["37075", "37077"],
     neighborhoods: ["Indian Lake", "Walton Ferry", "Fairvue Plantation", "Durham Farms"],
     intro:
-      "The \"City by the Lake\" on Old Hickory Lake mixes established lakefront homes with newer communities like Durham Farms. We serve all of Hendersonville with reliable same-day vent cleaning.",
+      "The \"City by the Lake\" on Old Hickory Lake mixes established lakefront homes with newer communities like Durham Farms. We serve all of Hendersonville with reliable vent cleaning.",
     angle:
       "Hendersonville's established homes often have older, brittle vent ducting that cracks and traps lint — worth inspecting alongside a cleaning.",
     geo: { lat: 36.3048, lng: -86.6200 },
@@ -200,7 +200,7 @@ export const locations: Location[] = [
     zips: ["37221"],
     neighborhoods: ["River Plantation", "Harpeth River corridor", "Bellevue"],
     intro:
-      "Bellevue is a family-friendly West Nashville community of wooded lots and single-family homes along the Harpeth River. We keep Bellevue dryers safe and efficient with same-day service.",
+      "Bellevue is a family-friendly West Nashville community of wooded lots and single-family homes along the Harpeth River. We keep Bellevue dryers safe and efficient with professional vent cleaning.",
     angle:
       "Bellevue's wooded setting means more exterior vent caps blocked by debris and leaves — worth checking with every cleaning.",
     geo: { lat: 36.0717, lng: -86.9472 },

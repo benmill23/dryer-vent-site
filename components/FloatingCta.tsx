@@ -23,7 +23,7 @@ export default function FloatingCta() {
       </button>
       <div className="fc-text">
         <span className="t1">Dryer vent clogged?</span>
-        <span className="t2">Same-day service</span>
+        <span className="t2">Get a free quote</span>
       </div>
       <a className="fc-btn" href={`tel:${site.phoneRaw}`}>
         <Icon name="phone" />
