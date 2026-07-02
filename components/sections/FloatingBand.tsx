@@ -21,14 +21,13 @@ export default function FloatingBand() {
 
       <div className="relative mx-auto max-w-3xl px-5">
         {/* Floating technician photo */}
-        <div className="animate-float relative mx-auto w-full max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
+        <div className="animate-float relative mx-auto aspect-[1713/918] w-full max-w-lg overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/25">
           <Image
-            src="/1st-first-choice-appliance-repair.jpg"
-            alt={`${site.shortName} technicians on the job across Metro ${site.city}`}
-            width={828}
-            height={828}
+            src="/technician.png"
+            alt={`${site.shortName} technician cleaning an exterior dryer vent in Metro ${site.city}`}
+            fill
             sizes="(max-width: 768px) 100vw, 32rem"
-            className="h-full w-full object-cover"
+            className="object-cover"
           />
           {/* 5-star rating badge on the image */}
           <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 shadow-lg backdrop-blur">

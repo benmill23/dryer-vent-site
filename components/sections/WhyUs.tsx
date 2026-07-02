@@ -40,9 +40,9 @@ export default function WhyUs() {
             <div className="relative w-full max-w-md">
               <div className="rounded-3xl bg-gradient-to-br from-brand-600 to-brand-900 p-6 text-center text-white shadow-2xl">
                 <Placeholder
-                  label="Our technician at work"
+                  label="Dryer vent duct being professionally cleaned"
                   aspect="4 / 3"
-                  src="/technician.png"
+                  src="/industrial-dryer-vent-cleaning.jpg"
                   className="ring-1 ring-white/20"
                 />
                 <div className="mt-5 grid grid-cols-2 gap-4">
