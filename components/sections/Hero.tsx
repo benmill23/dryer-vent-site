@@ -26,6 +26,24 @@ export default function Hero() {
               Now Booking — Call Today
             </span>
 
+            {/* Mobile-only logo — sits above the headline. On lg+ the logo
+                lives in its own column (below) instead. */}
+            <div className="animate-fade-up-1 mb-2 mt-7 flex justify-center lg:hidden">
+              <Image
+                src="/logo.png"
+                alt={site.name}
+                width={600}
+                height={885}
+                priority
+                className="animate-float h-auto w-auto max-h-[19rem]"
+                // Glow scaled down to match the smaller mobile logo.
+                style={{
+                  filter:
+                    "drop-shadow(0 0 13px rgba(250,204,21,0.65)) drop-shadow(0 0 30px rgba(250,204,21,0.40)) drop-shadow(0 6px 10px rgba(0,0,0,0.18))",
+                }}
+              />
+            </div>
+
             <h1 className="animate-fade-up-1 mt-5 text-4xl font-extrabold leading-[1.12] text-ink-900 sm:text-5xl">
               Professional{" "}
               <span className="text-shimmer">Dryer Vent Cleaning</span> in{" "}
@@ -41,7 +59,7 @@ export default function Hero() {
               *A division of {site.parent.name}
             </a>
 
-            <p className="animate-fade-up-2 mt-5 text-lg leading-relaxed text-ink-600">
+            <p className="animate-fade-up-2 mt-5 hidden text-lg leading-relaxed text-ink-600 lg:block">
               Protect your home and family from fire hazards, cut your energy
               bills, and extend the life of your dryer with expert vent cleaning
               from a local, family-owned team with {site.yearsExperience} years
@@ -60,7 +78,9 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="animate-fade-up-3 mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+            {/* Hero CTAs — hidden below lg where the sticky bottom bar
+                (Call Now / Free Quote) already covers these actions. */}
+            <div className="animate-fade-up-3 mt-8 hidden flex-col gap-3 sm:flex-row sm:justify-center lg:flex lg:justify-start">
               <a
                 href={`tel:${site.phoneRaw}`}
                 className="cta-glow inline-flex items-center justify-center gap-2.5 rounded-lg bg-brand-600 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-brand-800"
@@ -81,15 +101,15 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="animate-fade-up-2 flex justify-center">
-            {/* Logo as the hero centerpiece — standalone, no background */}
+          <div className="animate-fade-up-2 hidden justify-center lg:flex">
+            {/* Logo as the hero centerpiece (desktop) — standalone, no background */}
             <Image
               src="/logo.png"
               alt={site.name}
               width={600}
               height={885}
               priority
-              className="animate-float h-auto w-auto max-h-[34rem] sm:max-h-[46rem]"
+              className="animate-float h-auto w-auto max-h-[46rem]"
               // Shape-fitted yellow glow: drop-shadow follows the logo's
               // silhouette (tight + soft layers), plus a subtle dark shadow.
               // Blur radii scale with the logo size so the glow stays proportional.
