@@ -188,11 +188,13 @@ Call now
 
 ## Reviews ("What Our Neighbors Say")
 
+> ⚠️ **Currently HIDDEN on the live site.** All review/rating UI (this section, the "Reviews" nav links, the "5.0 Rating" badge, and the ★★★★★ trust badge) is gated behind `showReviews` in `lib/site.ts`, set to `false` until there are real Google Business Profile reviews. To bring it back: replace the placeholder testimonials in `lib/site.ts` with real reviews, then flip `showReviews` to `true`.
+
 **Eyebrow:** Reviews
 **H2:** What Our Neighbors Say
 **Intro:** Real homeowners across Metro Nashville trust 1st Choice to keep their families safe.
 
-> ⚠️ Note: These are placeholder testimonials in the code, to be replaced with real Google/Facebook reviews before launch.
+> ⚠️ Note: These are placeholder testimonials in the code, to be replaced with real Google/Facebook reviews.
 
 - **Sarah M., Brentwood, TN** (★★★★★) — "Showed up same day and pulled a huge amount of packed lint out of our vent. Our dryer runs like new and the tech was so professional. Highly recommend!"
 - **James T., Hendersonville, TN** (★★★★★) — "Honest, fair pricing and no upsell. Explained everything and showed me the lint they pulled out. Our clothes dry in one cycle now."

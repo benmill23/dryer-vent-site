@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Icon from "@/components/Icon";
-import { site } from "@/lib/site";
+import { site, showReviews } from "@/lib/site";
 
 const mainLinks = [
   { href: "/#services", label: "Services" },
@@ -18,7 +18,7 @@ const propertyLinks = [
 ];
 
 const endLinks = [
-  { href: "/#reviews", label: "Reviews" },
+  ...(showReviews ? [{ href: "/#reviews", label: "Reviews" }] : []),
   { href: "/#faq", label: "FAQ" },
 ];
 

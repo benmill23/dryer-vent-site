@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Icon from "@/components/Icon";
 import Wave from "@/components/Wave";
-import { site, trustBadges } from "@/lib/site";
+import { site, showReviews, trustBadges } from "@/lib/site";
 
 // Transitional "palette-cleanser" band between the intro (hero + risks) and the
 // main content. The brand emblem floats in the middle of the page over a bright
@@ -29,15 +29,17 @@ export default function FloatingBand() {
             sizes="(max-width: 768px) 100vw, 32rem"
             className="object-cover"
           />
-          {/* 5-star rating badge on the image */}
-          <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 shadow-lg backdrop-blur">
-            <span className="flex gap-0.5 text-amber-400">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Icon key={i} name="star" className="h-4 w-4" />
-              ))}
-            </span>
-            <span className="text-xs font-bold text-ink-700">5.0 Rating</span>
-          </div>
+          {/* 5-star rating badge on the image (hidden until real GBP reviews exist) */}
+          {showReviews && (
+            <div className="absolute bottom-3 left-3 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 shadow-lg backdrop-blur">
+              <span className="flex gap-0.5 text-amber-400">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Icon key={i} name="star" className="h-4 w-4" />
+                ))}
+              </span>
+              <span className="text-xs font-bold text-ink-700">5.0 Rating</span>
+            </div>
+          )}
         </div>
 
         <h2 className="mt-8 text-3xl font-extrabold leading-tight sm:text-4xl">

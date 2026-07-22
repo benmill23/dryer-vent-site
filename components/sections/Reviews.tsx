@@ -1,5 +1,5 @@
 import Icon from "@/components/Icon";
-import { reviews, site } from "@/lib/site";
+import { reviews, showReviews, site } from "@/lib/site";
 
 function Stars({ n }: { n: number }) {
   return (
@@ -12,6 +12,8 @@ function Stars({ n }: { n: number }) {
 }
 
 export default function Reviews() {
+  if (!showReviews) return null;
+
   return (
     <section id="reviews" className="section bg-white">
       <div className="mx-auto max-w-6xl px-5">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { site, services, serviceAreas } from "@/lib/site";
+import { site, services, serviceAreas, showReviews } from "@/lib/site";
 
 export default function Footer() {
   const year = 2024; // bump as needed, or wire to a build-time constant
@@ -102,14 +102,16 @@ export default function Footer() {
                   Short-Term Rentals
                 </a>
               </li>
-              <li>
-                <a
-                  href="#reviews"
-                  className="text-sm text-white/70 hover:text-white"
-                >
-                  Reviews
-                </a>
-              </li>
+              {showReviews && (
+                <li>
+                  <a
+                    href="#reviews"
+                    className="text-sm text-white/70 hover:text-white"
+                  >
+                    Reviews
+                  </a>
+                </li>
+              )}
               <li>
                 <a href="#faq" className="text-sm text-white/70 hover:text-white">
                   FAQ

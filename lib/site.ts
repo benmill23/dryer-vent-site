@@ -235,8 +235,14 @@ export const addOns = [
 export const guarantee =
   "If your dryer isn't moving air better after we clean, we'll come back and make it right — guaranteed. Upfront flat pricing, no surprises.";
 
+// Master switch for all review/rating UI: the Reviews section, the "Reviews"
+// nav links, the 5.0-rating badge, and the ★★★★★ trust badge. Keep this FALSE
+// until there are real Google Business Profile reviews — then replace the
+// placeholder testimonials below with real ones and flip this to true.
+export const showReviews = false;
+
 // NOTE: These are PLACEHOLDER testimonials so you can see the design.
-// Replace with your real Google/Facebook reviews before going live.
+// Replace with your real Google/Facebook reviews before showing them.
 // Do NOT publish fabricated reviews or star ratings — Google penalizes fake
 // review schema. Once you add real reviews, we can turn on rating rich-results.
 export const reviews = [

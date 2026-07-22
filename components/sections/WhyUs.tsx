@@ -1,6 +1,6 @@
 import Icon from "@/components/Icon";
 import Placeholder from "@/components/Placeholder";
-import { whyUs, site } from "@/lib/site";
+import { whyUs, showReviews, site } from "@/lib/site";
 
 export default function WhyUs() {
   return (
@@ -81,7 +81,9 @@ export default function WhyUs() {
                   {site.yearsExperience}
                 </span>
                 <span className="text-left">
-                  <span className="block text-sm text-amber-400">★★★★★</span>
+                  {showReviews && (
+                    <span className="block text-sm text-amber-400">★★★★★</span>
+                  )}
                   <span className="block text-xs font-semibold text-ink-600">
                     Trusted across Metro {site.city}
                   </span>
